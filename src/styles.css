@@ -11,7 +11,13 @@
 /* Criação de variáveis CSS para as cores. Caso decida mudá-las altero em um local apenas */
 :root {
   --bg-color: #1C1C21;
+  --bg-secondary-color: #333333;
+
   --text-color: #E4E4E7;
+
+  --primary-color: #9D6BFF;
+  --primary-color-10: rgba(157, 107, 255, 0.1);
+  --secondary-color: #3D3859;
 }
 
 body {
@@ -23,10 +29,27 @@ body {
   background-color: var(--bg-color);
 }
 
-section {
+.container {
   width: min(1440px, 90%);
   margin: 0 auto;
   padding: 3rem 0;
+}
 
-  background-color: green;
+
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem 0;
+
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-weight: 600;
+
+  border-top: 2px solid var(--secondary-color);
+  box-shadow: 0px -8px 10px var(--primary-color-10);
+  background-color: var(--bg-secondary-color);
 }

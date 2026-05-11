@@ -25,21 +25,36 @@
 
 <body>
 
-  Menu
+  <header>
+    <nav>
+      <ul>
+        <li>Sobre Mim</li>
+        <li>Formação</li>
+        <li>Meus Trabalhos</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
 
-  Sobre mim - Apresentação, Informações Pessoais (Nome, idade e profissão) e Hobbies (Programar e Passar um Tempo com a
-  minha família)
+  </header>
 
-  Uninter - Ciências da Computação
-  Formação - IFSP - Integrado à Informática
+  <section>
+    Sobre mim - Apresentação, Informações Pessoais (Nome, idade e profissão) e Hobbies (Programar e Passar um Tempo com
+    a minha família)
+  </section>
 
-  Porfólio - Spotify Clone e API Genérica (Link para o GitHhub)
+  <section>
+    Uninter - Ciências da Computação
+    Formação - IFSP - Integrado à Informática
+  </section>
 
-  Formulário - Nome, Email e Mensagem (Com validação e simulação de envio - Toast)
+
+  <section>
+    Porfólio - Spotify Clone e API Genérica (Link para o GitHhub)
+  </section>
 
   <div class="divisor"></div>
 
-  <section id="contact-form-wrapper">
+  <section class="container" id="contact-form-wrapper">
     <h2>Entre em Contato!</h2>
 
     <form>
@@ -58,17 +73,18 @@
 
       <div id="contact-form-1-field-wrapper">
         <fieldset>
-          <label for="mensagem">E-mail</label>
-          <textarea rows="5"></textarea>
+          <label for="message">Mensagem</label>
+          <textarea rows="5" id="message"></textarea>
         </fieldset>
       </div>
 
-      <button class="btn-default btn-primary">Enviar!</button>
-
+      <button class="btn-default btn-primary" type="button">Enviar!</button>
     </form>
   </section>
 
-
+  <footer>
+    <p>Paulo Ricardo Fernandes - <span id="current-year"></span></p>
+  </footer>
 
 </body>
 
