@@ -1,3 +1,4 @@
+// Crialo uma classe para inicializar o projeto.
 class App {
   run() {
     console.log("Porfolio App Running..")

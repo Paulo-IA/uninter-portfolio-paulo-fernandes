@@ -3,13 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 
+  /* Essas propriedades abaixo, deixam a fonte mais "macia", tornando o site mais agradável ao leitor */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Criação de variáveis CSS para as cores. Caso decida mudá-las altero em um local apenas */
 :root {
   --bg-color: #1C1C21;
-  --text-color: #FFF;
+  --text-color: #E4E4E7;
 }
 
 body {
