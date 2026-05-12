@@ -29,6 +29,7 @@ class App {
     this.$submitFormButton.addEventListener('click', this.submitForm)
   }
 
+  // Acho importante frisar que usei as arrow functions pra manter o escopo do 'this' da classe. Nenhuma diferença prática, é mais conceitual.
   submitForm = () => {
     this.$form.requestSubmit();
   }
@@ -41,6 +42,8 @@ class App {
     const $messageField = document.querySelector('#message');
 
     const name = $nameField.value
+
+    // validate
 
     const contactInfo = {
       name,
