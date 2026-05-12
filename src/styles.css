@@ -178,6 +178,122 @@ body {
   color: var(--text-secondary-color);
 }
 
+/* Portfolio */
+#projects-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--secondary-color);
+  background-color: var(--bg-light-hover-color);
+}
+
+.project-card-header {
+  margin-bottom: 1rem;
+}
+
+.project-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.project-card-body {
+  flex: 1;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.project-markdown p {
+  margin-bottom: 1rem;
+}
+
+.project-markdown p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.project-markdown strong {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.project-markdown h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.project-markdown ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-markdown ul li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.project-markdown ul li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  opacity: 0.8;
+}
+
+.project-link:active {
+  transform: translateX(2px);
+}
+
 /* Formulário */
 #contact-form-wrapper h2 {
   font-size: 2rem;

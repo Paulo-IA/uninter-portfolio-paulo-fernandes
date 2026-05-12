@@ -96,9 +96,90 @@
     </div>
   </section>
 
+  <section class="container" id="projects-wrapper">
+    <h2>Meus Trabalhos</h2>
 
+    <div class="projects-list">
 
-  <div class="divisor"></div>
+      <article class="project-card">
+        <div class="project-card-header">
+          <h3>Portfólio - Spotify Clone</h3>
+        </div>
+        <div class="project-card-body">
+          <p>Clone da interface do Spotify, focado em replicar a experiência do usuário e o design da plataforma.</p>
+        </div>
+        <div class="project-card-footer">
+          <a href="https://github.com/Paulo-IA/simple-spotify-clone" class="project-link" target="_blank">
+            Acessar Projeto
+            <img src="../public/icons/external-link.svg" alt="Link Externo" />
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-header">
+          <h3>API Genérica de Gerenciamento de Despesas</h3>
+        </div>
+
+        <div class="project-card-body project-markdown">
+          <p>
+            Esta <strong>API</strong>, desenvolvida utilizando <strong>.NET 8</strong>, adota os princípios do
+            <strong>Domain-Driven Design (DDD)</strong> para
+            oferecer uma solução estruturada e eficaz no gerenciamento de despesas pessoais. O principal objetivo é
+            permitir que
+            os usuários registrem suas despesas, detalhando informações como título, data e hora, descrição, valor e
+            tipo de
+            pagamento, com os dados sendo armazenados de forma segura em um banco de dados <strong>MySQL</strong>.
+          </p>
+
+          <p>
+            A arquitetura da <strong>API</strong> baseia-se em <strong>REST</strong>, utilizando métodos
+            <strong>HTTP</strong> padrão para uma comunicação eficiente e
+            simplificada. Além disso, é complementada por uma documentação <strong>Swagger</strong>, que proporciona uma
+            interface gráfica
+            interativa para que os desenvolvedores possam explorar e testar os endpoints de maneira fácil.
+          </p>
+
+          <p>
+            Dentre os pacotes NuGet utilizados, o <strong>AutoMapper</strong> é o responsável pelo mapeamento entre
+            objetos de domínio e
+            requisição/resposta, reduzindo a necessidade de código repetitivo e manual. O
+            <strong>FluentAssertions</strong> é utilizado nos
+            testes de unidade para tornar as verificações mais legíveis, ajudando a escrever testes claros e
+            compreensíveis.
+            Para as validações, o <strong>FluentValidation</strong> é usado para implementar regras de validação de
+            forma simples e intuitiva
+            nas classes de requisições, mantendo o código limpo e fácil de manter. Por fim, o
+            <strong>EntityFramework</strong> atua como um
+            ORM (Object-Relational Mapper) que simplifica as interações com o banco de dados, permitindo o uso de
+            objetos .NET
+            para manipular dados diretamente, sem a necessidade de lidar com consultas SQL.
+          </p>
+
+          <h4>Features</h4>
+          <ul>
+            <li><strong>Domain-Driven Design (DDD):</strong> Estrutura modular que facilita o entendimento e a
+              manutenção do domínio da aplicação.</li>
+            <li><strong>Testes de Unidade:</strong> Testes abrangentes com FluentAssertions para garantir a
+              funcionalidade e a qualidade.</li>
+            <li><strong>Geração de Relatórios:</strong> Capacidade de exportar relatórios detalhados para
+              <strong>PDF</strong> e <strong>Excel</strong>, oferecendo uma análise visual e eficaz das despesas.
+            </li>
+            <li><strong>RESTful API com Documentação Swagger:</strong> Interface documentada que facilita a integração e
+              o teste por parte dos desenvolvedores.</li>
+          </ul>
+        </div>
+
+        <div class="project-card-footer">
+          <a href="https://github.com/Paulo-IA/cashflow/tree/main" class="project-link" target="_blank">
+            Ver mais
+            <img src="../public/icons/external-link.svg" alt="Link Externo" />
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
 
   <section class="container" id="contact-form-wrapper">
     <h2>Entre em Contato!</h2>
