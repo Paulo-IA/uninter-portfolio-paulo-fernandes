@@ -43,18 +43,33 @@ class App {
 
     const name = $nameField.value
 
-    // validate
-
     const contactInfo = {
       name,
       email: $emailField.value,
       message: $messageField.value
     };
 
+    if (!this.isValid(contactInfo)) {
+      return;
+    }
+
     console.log(contactInfo); // Daqui, dá pra chamar um serviço de mensageria, ou guardar em um banco dedados...
 
     this.showSuccessMessage(name)
     this.$form.reset();
+  }
+
+  isValid = (contactInfo) => {
+    const { name, email, message } = contactInfo;
+
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      alert('Por favor, preencha todos os campos.');
+      return false;
+    }
+
+
+
+    return true;
   }
 
   showSuccessMessage = (fullName) => {
