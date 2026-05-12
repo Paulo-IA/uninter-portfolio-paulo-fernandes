@@ -62,12 +62,17 @@ class App {
   isValid = (contactInfo) => {
     const { name, email, message } = contactInfo;
 
+    // Verifico se estão vaios
     if (!name.trim() || !email.trim() || !message.trim()) {
       alert('Por favor, preencha todos os campos.');
       return false;
     }
 
-
+    // Seria mais seguro se eu usasse um regex
+    if (!email.includes('@') || !email.includes('.')) {
+      alert('Por favor, insira um e-mail válido.');
+      return false;
+    }
 
     return true;
   }
